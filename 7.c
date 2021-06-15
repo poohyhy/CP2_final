@@ -25,6 +25,6 @@ int main(void)
 	//arr배열을 역순으로 출력하여 변환된 이진수 출력
 	for (int i = index-1; i >= 0; i--)
 		printf("%d", arr[i]); 
-
+	printf("\n");
 	return 0; 
 }

@@ -34,14 +34,16 @@ int main(int argc, char **argv)
 	//-r옵션이 주어졌을 때
 	if (strcmp(argv[1], "-r") == 0) {
 		bubbleSort_r(argv, argc-1);
-			for (int i = 2; i < argc; i++) //argv[1][]까지는 명령어이므로 2부터 출력 시작
-				printf("%s ", argv[i]);
+		for (int i = 2; i < argc; i++) //argv[1][]까지는 명령어이므로 2부터 출력 시작
+			printf("%s ", argv[i]);
+		printf("\n");
 	}
 	//옵션이 주어지지 않았을 때
 	else {
 		bubbleSort(argv, argc-1);
-			for (int i = 1; i < argc; i++) //argv[0][]는 명령어이므로 1부터 출력 시작
-				printf("%s ", argv[i]);
+		for (int i = 1; i < argc; i++) //argv[0][]는 명령어이므로 1부터 출력 시작
+			printf("%s ", argv[i]);
+		printf("\n");
 	}
 	return 0;
 }

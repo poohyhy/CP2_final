@@ -33,7 +33,7 @@ void find(long a, long b)
 		}
 		n++;
 	}
-	printf("\n%d", count);
+	printf("\n%d\n", count);
 }
 
 int main(void)

@@ -40,7 +40,7 @@ int main(void)
 		//라인 수를 1증가시키고 다시 loop
 		linecount++;
 	}
-	printf("\n%d %d %d %s", linecount, wordcount, charcount, FILE_NAME);
+	printf("\n%d %d %d %s\n", linecount, wordcount, charcount, FILE_NAME);
 	fclose(fp);
 
 	return 0;
