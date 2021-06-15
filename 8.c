@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
-#define	MAX_FILE_SIZE	100
+#define	MAX_LINE_SIZE	100
 #define FILE_NAME	"8.dat"
 
 int main(void)
@@ -17,9 +16,9 @@ int main(void)
 	FILE *fp = fopen(FILE_NAME, "r");
 	while(!feof(fp)) {
 		//읽어들인 한 줄을 저장할 line문자열을 매 읽기마다 동적으로 생성
-		char *line = (char *)malloc(sizeof(char) * MAX_FILE_SIZE);
+		char *line = (char *)malloc(sizeof(char) * MAX_LINE_SIZE);
 		//한줄 읽기
-		fgets(line, MAX_FILE_SIZE, fp);
+		fgets(line, MAX_LINE_SIZE, fp);
 		//한줄 출력
 		printf("%s",line);
 
